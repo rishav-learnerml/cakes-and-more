@@ -4,21 +4,20 @@ import { useState } from "react";
 
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login");
-  console.log("Header render");
 
   return (
-    <div className="header">
-      <div className="logo-container">
-        <img className="logo" src={LOGO_URL} />
+    <div className="flex justify-between shadow-md sticky top-0 z-50 bg-white">
+      <div className="">
+        <img src={LOGO_URL}  className="w-20"/>
       </div>
-      <div className="nav-items">
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About Us</Link></li>
-          <li><Link to='/contact'>Contact Us</Link></li>
-          <li>Cart</li>
+      <div>
+        <ul className="flex justify-between">
+          <li className="m-4 p-4"><Link to='/'>Home</Link></li>
+          <li className="m-4 p-4"><Link to='/about'>About Us</Link></li>
+          <li className="m-4 p-4"><Link to='/contact'>Contact Us</Link></li>
+          <li className="m-4 p-4">Cart</li>
           <button
-            className="login"
+            className="mr-2"
             onClick={() => {
               btnNameReact === "Login"
                 ? setBtnNameReact("Logout")

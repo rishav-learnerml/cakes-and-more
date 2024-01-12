@@ -24,20 +24,20 @@ const RestaurantDetails = () => {
     ?.card?.card?.categories?.at(0)?.itemCards;
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <img src={CDN_URL + imageId} alt="restaurant-img" />
-      <p>
+    <div className="">
+      <h1 className="">{name}</h1>
+      <img src={CDN_URL + imageId} alt="restaurant-img"/>
+      <p className="">
         {city}-{locality}
       </p>
       <p>{rating} ⭐️</p>
       <p>Cuisines - {costForTwoMessage}</p>
       <p>{cuisines.join(", ")}</p>
-      <h2>Menu</h2>
+      <h2 className="">Menu :</h2>
       <ul>
-        {foodItems?.map((food) => (
+        {foodItems?foodItems.map((food) => (
           <li key={food?.card?.info?.id}>{food?.card?.info?.name}</li>
-        ))}
+        )):"Not available at the moment!"}
       </ul>
     </div>
   );
