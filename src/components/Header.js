@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { LOGO_URL } from "../utils/constants";
+// import { LOGO_URL } from "../utils/constants";
+import logo from '../assets/swiggy.svg'
 import { useState } from "react";
 
 const Header = () => {
@@ -7,8 +8,8 @@ const Header = () => {
 
   return (
     <div className="flex justify-between shadow-md sticky top-0 z-50 bg-white">
-      <div className="">
-        <img src={LOGO_URL}  className="w-20"/>
+      <div className="mt-2">
+        <img src={logo}  className="w-20"/>
       </div>
       <div>
         <ul className="flex justify-between">
