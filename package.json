@@ -1,7 +1,7 @@
 {
   "name": "namaste-react",
   "version": "1.0.0",
-  "description": "This is Namaste React by Akshay Saini",
+  "description": "This is Namaste Food by Rishav",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/namastedev/namaste-react.git"
   },
   "keywords": [],
-  "author": "Akshay Saini",
+  "author": "Rishav",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/namastedev/namaste-react/issues"
